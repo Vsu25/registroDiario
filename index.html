@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Actividades Diarias</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+    <h1>Control de Actividades Diarias</h1>
+
+    <h2>Registrar Actividad</h2>
+    <form id="activity-form">
+        <label for="description">Descripción:</label>
+        <input type="text" id="description" required><br>
+
+        <label for="days">Cantidad de Días:</label>
+        <input type="number" id="days" required><br>
+
+        <label for="start-date">Fecha de Inicio:</label>
+        <input type="date" id="start-date" required><br>
+
+        <label for="end-date">Fecha de Fin:</label>
+        <input type="date" id="end-date" required><br>
+
+        <label for="responsible">Responsable:</label>
+        <input type="text" id="responsible" required><br>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Lista de Actividades</h2>
+    <ul id="activity-list">
+        <!-- Aquí se mostrará la lista de actividades -->
+    </ul>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
