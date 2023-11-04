@@ -1,3 +1,5 @@
+// este codigo no fue utilizado debido a que se cambio de localhost a localStorage
+
 <?php
 header("Content-Type: application/json");
 
