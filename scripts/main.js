@@ -324,12 +324,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Evento para abrir el modal al hacer clic en el botón de edición
+   // Evento para abrir el modal al hacer clic en el botón de edición
+// Evento para abrir el modal al hacer clic en el botón de edición
     function editarActividad(activity, row) {
         // Mostrar el modal
         const modal = document.getElementById("modal");
         modal.style.display = "block";
 
-        // Cargar los datos de la actividad en el formulario dentro del modal form-edit (creado)
+        // Cargar los datos de la actividad en el formulario dentro del modal
         const modalContent = document.querySelector(".modal-content");
         modalContent.innerHTML = `
             <h2>Editar Actividad</h2>
@@ -344,7 +346,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <label for="edited-startDate">Día de Inicio</label>
                 <input type="date" id="edited-startDate" value="${activity.startDate}">
                 <br>
-                <label for "edited-endDate">Día Final</label>
+                <label for="edited-endDate">Día Final</label>
                 <input type="date" id="edited-endDate" value="${activity.endDate}">
                 <br>
                 <label for="edited-responsible">Responsable:</label>
@@ -354,10 +356,10 @@ document.addEventListener("DOMContentLoaded", function () {
             </form>
         `;
 
-    
+        // Adjuntar un manejador de eventos al botón "Guardar Cambios" en el modal
         const saveChangesButton = document.getElementById("save-changes-button");
         saveChangesButton.addEventListener("click", function () {
-            // Valores editados
+            // Obtén los valores editados
             const editedDescription = document.getElementById("edited-description").value;
             const editedDays = document.getElementById("edited-days").value;
             const editedStartDate = document.getElementById("edited-startDate").value;
@@ -391,6 +393,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+
 
 
 
