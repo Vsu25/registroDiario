@@ -11,7 +11,7 @@
     <h2>Registrar Actividad</h2>
     <form id="activity-form">
         <label for="description">Descripción:</label>
-        <input type="text" id="description" placeholder="Tipo de Actividad" required><br>
+        <input type="text" name="description" id="description" placeholder="Tipo de Actividad" required><br>
 
         <label for="days">Cantidad de Días:</label>
         <input type="number" id="days" placeholder="Cuantos Dias?" required><br>
@@ -37,6 +37,7 @@
                 <th>Inicio</th>
                 <th>Fin</th>
                 <th>Responsable</th>
+                <th>Edición</th>
             </tr>
         </thead>
         <tbody>
@@ -44,6 +45,14 @@
         </tbody>
     </table>
 
-    <script src="scripts/main.js"></script>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <!-- Contenido del formulario de edición -->
+        </div>
+    </div>
+    
+
+<script src="scripts/main.js"></script>
 </body>
 </html>

@@ -92,9 +92,94 @@ h1, h2 {
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     transition: background-color 0.3s; /* Efecto de transición */
 }
-
+#edit-button {
+    margin-top: 10px;
+    background-color: green; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 3px;
+    padding: 5px 10px; /* Espaciado interno (alto, ancho) */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+#del-button {
+    margin-top: 10px;
+    background-color: red; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 3px;
+    padding: 5px 10px; /* Espaciado interno (alto, ancho) */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
 #submit-button:hover {
     background-color: #0056b3; /* Cambia el color de fondo al pasar por encima */
+}
+/* modal */
+/* Estilos para el modal de edición */
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 70%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la tabla de edición dentro del modal */
+#edit-form {
+    margin: 0;
+    padding: 0;
+}
+
+#edit-form h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#edit-form label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#edit-form input[type="text"],
+#edit-form input[type="number"],
+#edit-form input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#edit-form button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#edit-form button:hover {
+    background-color: #0056b3;
 }
 
 
