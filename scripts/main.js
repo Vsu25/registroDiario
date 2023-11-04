@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Mostrar las actividades almacenadas en el almacenamiento local
     storedActivities.forEach(activity => {
-        addActivityToList(activity);
+        addActivityToTable(activity);
     });
 
     // Manejar el envío del formulario para agregar actividades
@@ -112,17 +112,24 @@ document.addEventListener("DOMContentLoaded", function () {
         activityForm.reset();
     });
 
-    // Función para agregar una actividad a la lista
-    function addActivityToList(activity) {
-        const listItem = document.createElement("li");
-        listItem.innerHTML = `
-            <strong>${activity.description}</strong> 
-            (Días: ${activity.days}, 
-            Inicio: ${activity.startDate}, 
-            Fin: ${activity.endDate}, 
-            Responsable: ${activity.responsible})
-        `;
-        activityList.appendChild(listItem);
+    
+    // Función para agregar una actividad a la tabla
+    function addActivityToTable(activity) {
+        const table = document.getElementById("activity-list").getElementsByTagName('tbody')[0];
+
+        const row = table.insertRow(table.rows.length);
+        const cell1 = row.insertCell(0);
+        const cell2 = row.insertCell(1);
+        const cell3 = row.insertCell(2);
+        const cell4 = row.insertCell(3);
+        const cell5 = row.insertCell(4);
+
+        cell1.innerHTML = activity.description;
+        cell2.innerHTML = activity.days;
+        cell3.innerHTML = activity.startDate;
+        cell4.innerHTML = activity.endDate;
+        cell5.innerHTML = activity.responsible;
     }
+
 });
  

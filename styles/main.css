@@ -1,0 +1,100 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+h1, h2 {
+    text-align: center;
+}
+
+.container{
+    max-width: 120rem;
+}
+/* Estilos para el formulario */
+#activity-form {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px auto; /* Centra el formulario horizontalmente */
+    max-width: 400px; /* Establece un ancho máximo */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#activity-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#activity-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: -12px; /* Añade margen solo al lado izquierdo */
+    background-color: lightcyan;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilos para la lista de actividades */
+#activity-list {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#activity-list {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre las celdas */
+}
+
+#activity-list th, #activity-list td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center; /* Alineación del texto en el centro */
+}
+
+#activity-list th {
+    background-color: #333;
+    color: #fff;
+}
+
+#activity-list tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo para filas pares */
+}
+
+#activity-list tr:nth-child(odd) {
+    background-color: #fff; /* Color de fondo para filas impares */
+}
+
+/* Estilo para el botón */
+#submit-button {
+    margin-top: 10px;
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 3px;
+    padding: 10px 20px; /* Espaciado interno (alto, ancho) */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+#submit-button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar por encima */
+}
+
+
